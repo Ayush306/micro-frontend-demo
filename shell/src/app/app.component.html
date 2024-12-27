@@ -1,0 +1,13 @@
+<nav>
+    <ul>
+      <li><a href="">Home</a> </li>
+      <li (click)="goTo('mfe1')"> MFE1</li>
+      <li (click)="goTo('mfe2')">  MFE2</li>
+    </ul>
+  </nav>
+<div class="host-container">
+    <h1>Host application {{messageMfe1}}</h1>
+    <p style="color: red;"><strong>message from mfe1: </strong>{{messageMfe1}}</p>
+<button (click)="openDialog()"> open from mfe1 </button>{{receviedData}}
+    <router-outlet></router-outlet>
+</div>

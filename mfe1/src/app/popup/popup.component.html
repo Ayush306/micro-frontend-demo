@@ -1,0 +1,18 @@
+<div class="popup-container" style="padding: 20px; width: 300px;">
+
+  <p>popup works!</p>
+  <h1>{{name.value}}</h1>
+  <div mat-dialog-content>
+    <select [formControl]="name" (change)="setValue($event)">
+      <option value="ayush">Ayush</option>
+      <option value="tomar">tomar</option>
+      <option value="rana">Rana</option>
+      <option value="computer">Computer</option>
+    </select>
+    
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button  (click)="ok()">Ok</button>
+    <button mat-button  (click)="cancel()">Cancel</button>
+  </div>
+</div>
